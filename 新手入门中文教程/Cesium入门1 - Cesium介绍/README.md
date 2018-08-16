@@ -1,5 +1,5 @@
 # Cesium入门1 - Cesium介绍
-#Cesium简介
+# Cesium简介
 Cesium官网：https://cesiumjs.org
 ![](https://i.loli.net/2018/08/09/5b6ba4812ea21.png)
 
@@ -15,7 +15,7 @@ CesiumJS is a geospatial 3D mapping platform for creating virtual globes. Our mi
 ```
 CesiumJS 是一款用于创建虚拟场景的3D地理信息平台。目标是用于创建以基于Web的地图动态数据可视化。目前尽力提升平台的性能、准确率、虚拟化能力、易用性以及平台的各种支持。
 
-#数据格式与功能特性
+# 数据格式与功能特性
 Cesium支持3D Tiles、Terrain and Imagery Layers、3D Models（glTF）、Vectors and Geometry（Load KML, GeoJSON, TopoJSON, and CZML）、Time-Dynamic Visualization、3D, 2D, and 2.5D Columbus View
 -	支持2D,2.5D,3D 形式的地理（地图）数据展示，
 -	可以绘制各种几何图形、高亮区域，支持导入图片，甚至三维模型等多种数据可视化展示
