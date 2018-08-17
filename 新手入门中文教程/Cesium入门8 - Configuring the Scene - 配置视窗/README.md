@@ -1,4 +1,6 @@
 # Cesium入门8 - Configuring the Scene - 配置视窗
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 接下来将添加一些更多的正确的时间和空间设置到Viewer中。涉及到与**viewer.scene**进行交互，该类控制了viewer中的所有图形元素。
 1. 首先，我们配置一下我们的scene，用以下代码激活基于太阳位置的光照：
 ```javascript

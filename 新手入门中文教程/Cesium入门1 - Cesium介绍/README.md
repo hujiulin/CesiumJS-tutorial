@@ -1,6 +1,9 @@
 # Cesium入门1 - Cesium介绍
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 # Cesium简介
 Cesium官网：https://cesiumjs.org
+
 ![](https://i.loli.net/2018/08/09/5b6ba4812ea21.png)
 
 官网中标题写到：

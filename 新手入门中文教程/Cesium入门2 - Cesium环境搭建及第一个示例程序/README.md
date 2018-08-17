@@ -1,4 +1,6 @@
 # Cesium入门2 - Cesium环境搭建及第一个示例程序
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 # 验证浏览器
 Cesium需要浏览器支持WebGL，可以通过CesiumJS官网提供的一个HelloWorld例子来测试自己的浏览器是否支持Cesium。（推荐使用Chrome）
 测试地址：

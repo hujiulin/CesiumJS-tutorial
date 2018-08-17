@@ -1,4 +1,6 @@
 # Cesium入门13 - Extras - 附加内容
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 剩下的代码只是添加了一些额外的可视化选项。类似于我们以前与HTML元素的交互，我们可以将侦听器函数附加到切换阴影和neighborhood 多边形可见性。
 
 让我们开始创建一个简单的方法来切换neighborhood多边形。一般来说，我们可以通过**Entity.show**用实体设置可见性来隐藏实体。但是，这只为单个实体设置可见性，并且我们希望一次性隐藏或显示所有的neighborhood实体。

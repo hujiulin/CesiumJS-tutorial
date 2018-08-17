@@ -1,4 +1,6 @@
 # Cesium入门9 - Loading and Styling Entities - 加载和样式化实体
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 现在我们已经为我们的应用程序设置了Viewer配置、imagery和terrain的阶段，我们可以添加我们的应用程序的主要焦点——geocache数据。
 
 为了便于可视化，Cesium支持流行的矢量格式GeoJson和KML，以及一种我们团队自己开源的格式，我们专门开发用于描述Cesium场景的[]CZML](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Guide)。

@@ -1,4 +1,6 @@
 # Cesium入门4 - 创建Cesium Viewer
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 任何Cesium应用程序的基础都是**Viewer**。Viewer是一个带有多种功能的可交互的三位数字地球的容器（盒子）。创建一个Viewer和HTML中的一个id为"cesiumContainer"的div绑定即可。
 ```javascript
 var viewer = new Cesium.Viewer('cesiumContainer');

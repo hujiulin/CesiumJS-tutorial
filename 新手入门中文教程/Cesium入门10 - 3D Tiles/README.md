@@ -1,4 +1,6 @@
 # Cesium入门10 - 3D Tiles
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 我们团队有时把Cesium描述成一个真实世界数据的3D游戏引擎。然而，使用真实世界的数据比使用典型的视频游戏数据资料要困难得多，因为真实数据可能是难以置信的高分辨率，并且需要精确的可视化。幸运的是，Cesium 与开源社区合作开发了[3D Tiles](https://cesiumjs.org/2015/08/10/Introducing-3D-Tiles/)，这是一个[开放的规范](https://github.com/AnalyticalGraphicsInc/3d-tiles)，用于传输海量的异构三维地理空间数据集。
 
 使用概念上类似于Cesium的terrain和imagery的流技术，3D Tiles 使得可以查看原本不能交互式查看的巨大的模型，包括建筑物数据集、CAD（或BIM）模型、点云和摄影测量模型。

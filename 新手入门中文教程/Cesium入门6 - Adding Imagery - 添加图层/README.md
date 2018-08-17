@@ -1,4 +1,6 @@
 # Cesium入门6 - Adding Imagery - 添加图层
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 Cesium应用程序另一个关键元素是Imagery(图层)。瓦片图集合根据不同的投影方式映射到虚拟的三维数字地球表面。依赖于相机指向地表的方向和距离，Cesium会去请求和渲染不同层级的图层详细信息。
 
 多种图层能够被添加、移除、排序和适应到Cesium中。

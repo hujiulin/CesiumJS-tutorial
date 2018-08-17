@@ -1,4 +1,6 @@
 # Cesium入门3 - Cesium目录框架结构
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 # app目录
 下载官网上的文件，我们能看到以下CesiumJS库结构：
 - Source/: Cesium应用程序代码及数据

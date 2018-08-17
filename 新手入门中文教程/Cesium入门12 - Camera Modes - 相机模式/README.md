@@ -1,4 +1,6 @@
 # Cesium入门12 - Camera Modes - 相机模式
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 为了展现我们的无人机飞行，让我们用相机模式进行实验。我们将保持简单的两个基本的相机模式，用户可以切换之间。
 - Free Mode : 默认相机控制。
 - Drone Mode : 让相机跟随无人机通过飞行在一个固定的距离。

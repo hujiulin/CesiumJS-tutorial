@@ -1,4 +1,6 @@
 # Cesium入门11 - Interactivity - 交互性
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
+
 最后，让我们添加一些鼠标交互。为了提高我们的geocache标记的可见性，当用户在标记上hovers时，我们可以改变它们的样式来突出显示。
 
 为了实现这一点，我们将使用拾取pick，一种Cesium的特征，从3D场景中返回数据，在观看者画布上给出像素位置。
