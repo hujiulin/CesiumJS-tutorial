@@ -60,3 +60,5 @@ cesiumJS与第三方JavaScript库和框架做了适配:
 推荐代码：https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Hello%20World.html&label=Showcases&gist=113c3467755fc38d9f9bce16a94475fc
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

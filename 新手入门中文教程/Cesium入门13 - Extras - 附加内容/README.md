@@ -24,3 +24,5 @@ shadowsElement.addEventListener('change', function (e) {
 最后，由于3D Tiles可能不立即加载，所以我们也可以添加一个加载指示符，只有在tileset加载完成时才被移除（因此promise已经解决）。
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

@@ -1,5 +1,7 @@
 # CesiumJS-tutorial
-CesiumJS中文基础教程 http://cesiumcn.org/ | http://cesium.coinidea.com/
+CesiumJS中文基础教程 
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 ## 新手入门中文教程
 ### 目录

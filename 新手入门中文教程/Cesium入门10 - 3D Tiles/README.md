@@ -106,3 +106,5 @@ tileStyle.addEventListener('change', set3DTileStyle);
 如果你有数据，需要帮助将其转换为3D瓦片，请继续关注关于Cesium Ion平台的更新！[在这里订阅更新](https://cesium.com/)。
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

@@ -139,3 +139,5 @@ var viewer = new Cesium.Viewer('cesiumContainer');
 ```
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

@@ -22,3 +22,5 @@ Cesium.Ion.defaultAccessToken = '<YOUR ACCESS TOKEN HERE>';
 <a href="https://cesium.com/docs/tutorials/getting-started/" target="_blank">Getting Started with Cesium ion</a>
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

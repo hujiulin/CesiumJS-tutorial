@@ -33,3 +33,5 @@ Cesium支持3D Tiles、Terrain and Imagery Layers、3D Models（glTF）、Vector
 -	Cesium是基于Apache2.0 许可的开源程序。它可以免费的用于商业和非商业用途。
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

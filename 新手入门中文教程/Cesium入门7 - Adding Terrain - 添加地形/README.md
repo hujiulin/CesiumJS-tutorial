@@ -37,3 +37,5 @@ viewer.scene.globe.depthTestAgainstTerrain = true;
 ***关于地形数据的更多信息，请访问[Terrain Tutorial](https://cesiumjs.org/tutorials/Terrain-Tutorial/)***
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

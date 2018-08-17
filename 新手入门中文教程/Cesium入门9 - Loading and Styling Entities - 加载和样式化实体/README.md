@@ -255,3 +255,5 @@ drone.position.setInterpolationOptions({
 
 ![](https://i.loli.net/2018/08/15/5b73d4025a620.jpg)
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/

@@ -53,3 +53,5 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
 如果需要查看Viewer的完整配置，请查看：https://cesiumjs.org/Cesium/Build/Documentation/Viewer.html。
 
 **Cesium中文网交流QQ群：807482793**
+
+Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
