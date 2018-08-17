@@ -32,6 +32,7 @@ var viewer = new Cesium.Viewer('cesiumContainer');
 7. CreditsDisplay : Displays data attributions. Almost always required!
 8. Timeline : Indicates current time and allows users to jump to a specific time using the scrubber.
 9. FullscreenButton : Makes the Viewer fullscreen.
+
 **翻译**
 1. Geocoder : 一种地理位置搜索工具，用于显示相机访问的地理位置。默认使用微软的Bing地图。
 2. HomeButton : 首页位置，点击之后将视图跳转到默认视角。
