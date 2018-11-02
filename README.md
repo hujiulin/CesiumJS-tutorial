@@ -19,3 +19,6 @@ Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coin
 - <a href="https://github.com/hujiulin/CesiumJS-tutorial/tree/master/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/Cesium%E5%85%A5%E9%97%A812%20-%20Camera%20Modes%20-%20%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%BC%8F" target="_blank">Cesium入门12 - Camera Modes - 相机模式</a>
 - <a href="https://github.com/hujiulin/CesiumJS-tutorial/tree/master/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/Cesium%E5%85%A5%E9%97%A813%20-%20Extras%20-%20%E9%99%84%E5%8A%A0%E5%86%85%E5%AE%B9" target="_blank">Cesium入门13 - Extras - 附加内容</a>
 
+## 中级进阶中文教程
+### 目录
+- <a href="https://github.com/hujiulin/CesiumJS-tutorial/tree/master/%E4%B8%AD%E7%BA%A7%E8%BF%9B%E9%98%B6%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/Cesium%E4%B8%AD%E7%BA%A71%20-%20%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89" target="_blank">Cesium中级1 - 空间数据可视化</a>
