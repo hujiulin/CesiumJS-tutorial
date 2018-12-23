@@ -22,3 +22,4 @@ Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coin
 ## 中级进阶中文教程
 ### 目录
 - <a href="https://github.com/hujiulin/CesiumJS-tutorial/tree/master/%E4%B8%AD%E7%BA%A7%E8%BF%9B%E9%98%B6%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/Cesium%E4%B8%AD%E7%BA%A71%20-%20%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89" target="_blank">Cesium中级1 - 空间数据可视化</a>
+- <a href="https://github.com/hujiulin/CesiumJS-tutorial/tree/master/%E4%B8%AD%E7%BA%A7%E8%BF%9B%E9%98%B6%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/Cesium%E4%B8%AD%E7%BA%A72%20-%20%E5%9B%BE%E5%B1%82" target="_blank">Cesium中级2 - 图层</a>
