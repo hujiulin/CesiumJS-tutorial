@@ -1,3 +1,4 @@
+# Cesium中级教程2 - 图层
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 Cesium支持从几个标准服务绘制和添加高分辨率图像（地图）图层。图层可以按顺序排列，并混合在一起。每一层的亮度、对比度、伽玛、色调和饱和度可以动态地改变。本节教程介绍了图层的概念以及相关的Cesuim APIs。

@@ -1,4 +1,4 @@
-# Cesium中级1 - 空间数据可视化
+# Cesium中级教程1 - 空间数据可视化
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 本教程将教读者如何使用Cesium的实体（Entity）API绘制空间数据，如点、标记、标签、线、模型、形状和物体。不需要Cesium的先验知识，但是如果读者完全没有这方面的经验，那么读者可能希望从[“新手入门中文教程（原创）”]( http://cesiumcn.org/getstart.html)开始学习。

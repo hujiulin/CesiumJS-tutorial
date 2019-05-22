@@ -1,4 +1,4 @@
-# Cesium中级5 - Terrain 地形
+# Cesium中级教程5 - Terrain 地形
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 CesiumJS支持对与水流相关的海洋、湖泊和河流以及全球高分辨率地形进行流式处理和可视化。查看山峰、山谷和其他地形特征，并拥抱三维数字地球。使用[Cesium ion](https://cesium.com/ion)流式化您自己的切片地形数据或高分辨率管理地形，如[Cesium World Terrain](https://cesium.com/content/cesium-world-terrain/)。

@@ -1,6 +1,6 @@
+# Cesium中级教程3 - Camera - 相机（摄像机）
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
-# Cesium中级3 - Camera - 相机（摄像机）
 ## Camera
 CesiumJS中的Camera控制场景的视图。有很多方法可以操作Camera，如旋转(rotate)、缩放(zoom)、平移(pan)和飞到目的地(flyTo)。CesiumJS有鼠标和触摸事件用来处理与Camrea的交互，还有API来以编程方式操作摄像机。了解如何使用Camera API和自定义相机控制(Camera controls)。
 

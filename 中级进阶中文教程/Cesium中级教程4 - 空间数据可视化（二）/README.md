@@ -1,4 +1,4 @@
-# Cesium中级4 - 空间数据可视化
+# Cesium中级教程4 - 空间数据可视化
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 ## Viewer中的Entity功能
