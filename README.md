@@ -34,3 +34,6 @@ Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coin
 
 
 
+## 付费教程
+### 目录
+- <a href="https://github.com/hujiulin/CesiumJS-tutorial/blob/master/Cesium%E4%B8%AD%E6%96%87%E7%BD%91%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC/Cesium%E4%B8%AD%E6%96%87%E7%BD%91%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-1%20-%20public.pdf" target="_blank">Cesium中文网的朋友们 - 1</a>
