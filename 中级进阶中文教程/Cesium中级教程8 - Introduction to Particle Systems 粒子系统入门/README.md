@@ -1,8 +1,9 @@
+# Cesium中级教程8 - Introduction to Particle Systems 粒子系统入门
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 ## What is a particle system? 什么是粒子系统？
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-d5b792f3c892368b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf395a4c05a042571.png)
 
 粒子系统是一种图形技术，可以模拟复杂的物理效果。粒子系统是小图像的集合，当它们一起观看时，会形成一个更复杂的“模糊”物体，如火、烟、天气或烟花[fireworkds](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/?src=Particle%20System%20Fireworks.html&label=Showcases)。通过使用诸如初始位置、速度和寿命等属性指定单个粒子的行为，可以控制这些复杂的效果。
 
@@ -25,8 +26,7 @@ var particleSystem = viewer.scene.primitives.add(new Cesium.ParticleSystem({
 }));
 ```
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-3c187c19125cf025.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![](https://i.loli.net/2019/06/02/5cf395bb2cef088399.gif)
 
 上面的代码创建了一个**ParticleSystem**，一个参数化的对象，用于控制单个粒子对象**Particle**随时间的外观和行为。粒子由粒子发射器产生，有一个位置和类型，存活一段时间，然后消亡。
 
@@ -53,7 +53,7 @@ var particleSystem = scene.primitives.add(new Cesium.ParticleSystem({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-98c323e1b0d4fd73.gif?imageMogr2/auto-orient/strip)
+![](https://i.loli.net/2019/06/02/5cf395d60158c70420.gif)
 
 ### CircleEmitter 圆形发射器
 *CircleEmitter*在发射器上轴线方向上的圆形内的随机采样位置初始化粒子。它接受一个指定圆半径的浮点参数。
@@ -68,7 +68,7 @@ var particleSystem = scene.primitives.add(new Cesium.ParticleSystem({
     lifetime : 16.0
 }));
 ```
-![image](https://upload-images.jianshu.io/upload_images/13720662-514778a3ee36ae6b.gif?imageMogr2/auto-orient/strip)
+![](https://i.loli.net/2019/06/02/5cf395f4baa2e14255.gif)
 
 如果发射器未指定，*CircleEmitter*将作为默认发射器。
 
@@ -86,7 +86,7 @@ var particleSystem = scene.primitives.add(new Cesium.ParticleSystem({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-f113d384bacb30a2.gif?imageMogr2/auto-orient/strip)
+![](https://i.loli.net/2019/06/02/5cf3960a069d080506.gif)
 
 ### SphereEmitter 球形发射器
 *SphereEmitter*在球体内随机取样的位置初始化粒子，并将它们从球体中心向外引导。它使用一个指定球体半径的浮点参数。
@@ -102,7 +102,7 @@ var particleSystem = scene.primitives.add(new Cesium.ParticleSystem({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-b96a6f03212951d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf39637e20fc14362.png)
 
 ## Configuring particle systems 配置粒子系统
 ### Particle emission rate 粒子发射率
@@ -241,7 +241,7 @@ var particleSystem = viewer.scene.primitives.add(new Cesium.ParticleSystem({
     emitterModelMatrix : computeEmitterModelMatrix()
 }));
 ```
-![image](https://upload-images.jianshu.io/upload_images/13720662-b3a77a3399b047b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf396e6869f720092.png)
 
 还要注意，我们可以随时间更新模型或发射器矩阵。例如，如果我们想要在卡车上设置发射器位置的动画，我们可以修改*emitterModelMatrix*，同时保持*modelMatrix*不变。
 
@@ -249,16 +249,12 @@ var particleSystem = viewer.scene.primitives.add(new Cesium.ParticleSystem({
 
 ## Learn more 更多知识
 有关使用更高级技术的粒子系统达到更酷效果，请参见[粒子系统更多效果](https://cesium.com/docs/tutorials/particle-systems-more-effects/)教程。
-![fireworks.gif](https://upload-images.jianshu.io/upload_images/13720662-a4991d8f75676b4e.gif?imageMogr2/auto-orient/strip)
-
+![](https://i.loli.net/2019/06/02/5cf3969e9f81160755.gif)
 
 更多示例代码请参考：
 - [Particle System Fireworks Demo](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Particle%20System%20Fireworks.html)
 - [Particle Systems Weather](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Particle%20System%20Weather.html)
 - [Particle Systems Tails](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Particle%20System%20Tails.html)
-
-> 本文由 [admin](http://www.getyii.com/member/admin) 创作，采用 [知识共享署名 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by/3.0/cn) 进行许可。
-可自由转载、引用，但需署名作者且注明文章出处。
 
 **Cesium中文网交流QQ群：807482793**
 

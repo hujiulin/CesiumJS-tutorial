@@ -17,7 +17,7 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
 
 修改样例后，按F8来运行：
 
-![image](http://upload-images.jianshu.io/upload_images/13720662-29344af02482b094.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2018/12/21/5c1c8b504285c.png)
 
 我们可以通过滑动鼠标滚轮放缩，来看到实际的图层流的变化。
 
@@ -32,20 +32,20 @@ var blackMarble = layers.addImageryProvider(new Cesium.createTileMapServiceImage
 }));
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/13720662-856595ee1345e80e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2018/12/21/5c1c8b620f9cf.png)
 
 因为黑色大理石层是最后加上的一层，覆盖了整个地球，所以黑色大理石图层覆盖了 Esri图层。我们可以把黑色大理石图层移到底部**layers.lower(blackMarble);**，但是为了让我们能更好地理解这两层之间的关系，让我们把它和Esri图层混合：
 ```javascript
 blackMarble.alpha = 0.5; // 0.0 is transparent.  1.0 is opaque.
 ```
-![image](http://upload-images.jianshu.io/upload_images/13720662-51e8bc0abc420945.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2018/12/21/5c1c8b789c609.png)
 
 下一步，调高灯光的亮度：
 ```javascript
 blackMarble.brightness = 2.0; // > 1.0 increases brightness.  < 1.0 decreases.
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/13720662-a8e019173b6bfcf3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2018/12/21/5c1c8b8d504a3.png)
 
 最后，添加一个单独的图像作为第三层作为特定的扩展。
 ```javascript
@@ -55,7 +55,7 @@ layers.addImageryProvider(new Cesium.SingleTileImageryProvider({
 }));
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/13720662-58ad25fc004defe7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2018/12/21/5c1c8ba349805.png)
 
 完整代码如下：
 ```javascript

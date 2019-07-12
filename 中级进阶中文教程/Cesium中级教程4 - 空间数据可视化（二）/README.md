@@ -35,9 +35,9 @@ wyoming.description = '\
 </p>';
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/13720662-931a883de985cbd3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/05/22/5ce4ab397a79173169.jpg)
 
-*InfoBox*中展示的所有HTML是沙盒式的。这组织了外部数据源带有恶意的注入到Cesium的应用程序中。为了在描述中运行JavaScript或浏览器插件，访问沙盒中的iframe通过*viewer.infoBox.frame*属性。参考[该文](http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/) 可以获得更多的信息用于控制iframe中的沙盒。
+*InfoBox*中展示的所有HTML是沙盒式的。这组织了外部数据源带有恶意的注入到Cesium的应用程序中。为了在描述中运行JavaScript或浏览器插件，访问沙盒中的iframe通过*viewer.infoBox.frame*属性。参考[该文](http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/)可以获得更多的信息用于控制iframe中的沙盒。
 
 ## Camera控制
 使用*iewer.zoomto*命令查看特定Entity。还有一个**viewer.flyto**方法，用于对Entity执行动画Camera飞行。这两种方法都可以传递给*Entity*、*EntityCollection*、**DataSource**或实体数组。
@@ -49,7 +49,7 @@ var heading = Cesium.Math.toRadians(90);
 var pitch = Cesium.Math.toRadians(-30);
 viewer.zoomTo(wyoming, new Cesium.HeadingPitchRange(heading, pitch));
 ```
-[图片上传失败...(image-ae8bb6-1558490847491)]
+![](https://i.loli.net/2019/05/22/5ce4ab509dfa357270.jpg)
 
 *zoomTo*和*flyTo*都是异步函数；也就是说，它们不能保证在返回之前完成。例如，飞行到Entity会在许多动画帧后发生。这两个功能都返回[Promises](http://www.html5rocks.com/en/tutorials/es6/promises/)，可用于计划飞行或缩放完成后要执行的功能。用下面的代码片段替换示例中的*zoomTo*。这架飞机飞往怀俄明州，并在飞行结束后选中它。
 ```javascript
@@ -197,7 +197,7 @@ var citizensBankPark = viewer.entities.add({
 viewer.zoomTo(viewer.entities);
 ```
 
-[图片上传失败...(image-9c705e-1558490847491)]
+![](https://i.loli.net/2019/05/22/5ce4ab8e0a06870941.jpg)
 
 默认情况下，标签水平和垂直居中。由于标签和点共享相同的位置，它们在屏幕上重叠。为避免这种情况，请指定标签源*Verticalorigin.BOTTOM*并将像素偏移量设置为（0，-9）。
 将该点替换为一个**billboard**，它是一个始终面向用户的标记。
@@ -219,7 +219,7 @@ var citizensBankPark = viewer.entities.add({
   }
 });
 ```
-![image](http://upload-images.jianshu.io/upload_images/13720662-e0201764a467ccac.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/05/22/5ce4aba37ceae81956.jpg)
 
 有关更多自定义选项，请参见Sandcastle**标签**和**广告牌**示例。
 
@@ -238,7 +238,7 @@ var entity = viewer.entities.add({
 viewer.trackedEntity = entity;
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/13720662-c1c9212a5f24c30c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/05/22/5ce4abc76626d77156.jpg)
 
 默认情况下，模型是垂直的，面向东。通过为**Entity.Orientation**属性指定**Quaternion**来控制模型的方向。这将控制模型的heading、pitch和roll。
 ```javascript

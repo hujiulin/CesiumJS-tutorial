@@ -1,3 +1,4 @@
+# Cesium中级教程7 - Geometry and Appearances 几何图形和外观
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 本教程将向您介绍提供使用Primitive API的几何图形和外观系统。这是一个高级主题，用于扩展具有自定义网格、形状、体积和外观的CesiumJS，而不是面向通用的Cesium用户。如果您有兴趣学习如何在地球上绘制各种形状和体积，请查看[创建实体](https://cesium.com/docs/tutorials/creating-entities)教程。
@@ -62,22 +63,22 @@ scene.primitives.add(new Cesium.Primitive({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-a2bcad0a32cbe9fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf37ea10607a50747.png)
 
 我们使用Primitive（**Primitive**）代替矩形实体，它结合了几何图形和外观。现在，我们将不区分**Geometry**和**GemometryInstance**。实例不仅是几何图形的实例，更是其的容器。
 
 为了创建矩形的几何图形，即覆盖矩形区域的三角形和适合球体曲率的三角形，我们创建了一个**RectangleGeometry**。
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-f9560cbcc06b289c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf37e3daedf538445.png)
 
 因为它在表面上，所以我们可以使用**EllipsoidSurfaceAppearance**。这通过假设几何图形在曲面上或在椭球体上方的恒定高度来节省内存。
 
 ## Geometry types 几何图形类型
 CesiumJS提供下列几何图形：
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-bbe8ddd5344ae003.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf37e714b37217644.png)
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-6197bbeaa16f95ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf37e894f8b871881.png)
 
 ## 组合几何图形
 当我们使用一个Primitive绘制多个静态几何图形时，我们看到了性能优势。例如，在一个Primitive中绘制两个矩形。
@@ -107,8 +108,7 @@ scene.primitives.add(new Cesium.Primitive({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-d63c39df3164f66a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![](https://i.loli.net/2019/06/02/5cf37dff9fd5856826.png)
 
 我们用不同的矩形创建了另一个实例，然后将这两个实例提供给Primitive。这将以相同的外观绘制两个实例。
 
@@ -144,7 +144,7 @@ scene.primitives.add(new Cesium.Primitive({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-7b9cc60c85fdb869.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf3803a6738348888.png)
 
 每个实例都有一个**颜色**属性。Primitive是用*PerinstanceColorAppearance*构造的，它使用每个实例的颜色属性来确定着色。
  
@@ -175,8 +175,7 @@ scene.primitives.add(new Cesium.Primitive({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-f69e1a4d297dc21b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![](https://i.loli.net/2019/06/02/5cf3804894ca774537.png)
 
 ## Picking 拾取
 实例合并后可以独立访问。为实例分配一个ID，并使用它来确定是否使用**Scene.Pick**拾取该实例。
@@ -216,8 +215,7 @@ handler.setInputAction(function (movement) {
 ## Geometry instances 几何实例
 实例可用于在场景的不同部分定位、缩放和旋转相同的几何体。这是可能的，因为多个实例可以引用相同的*Geometry*，并且每个实例可以具有不同的*modelMatrix*。这允许我们只计算一次几何图形，并多次重复使用它。
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-32389176321edd7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![](https://i.loli.net/2019/06/02/5cf38058cfc0e53681.png)
 
 以下示例创建一个**EllipsoidGeometry**和两个实例。每个实例引用相同的椭球几何体，但使用不同的*modelMatrix*放置它，导致一个椭球位于另一个椭球之上。
 ```javascript
@@ -262,7 +260,7 @@ scene.primitives.add(new Cesium.Primitive({
 }));
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-0089c510abb19a36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf380736c66431977.png)
 
 ## Updating per-instance attributes 更新实例属性
 将几何图形添加到Primitive后，更新几何图形的每个实例属性以更改可视化效果。每个实例的属性包括：
@@ -305,11 +303,11 @@ setInterval(function() {
 ## 外观
 几何定义结构。primitive的另一个关键属性，*appearance*，定义了primitive的纹理，即单个像素的颜色。primitive可以有多个几何实例，但只能有一个外观。根据外观的类型，外观将具有定义着色的主体的**material**。
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-799de165c6eb26de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf3808a41ff973711.png)
 
 CesiumJS具有下列外观：
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-5ab58914692490ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf380a4eb88e40705.png)
 
 外观定义了绘制Primitive时在GPU上执行的完整GLSL顶点和面片着色器。外观还定义了完整的渲染状态，它控制绘制primitvie时GPU的状态。我们可以直接定义渲染状态，也可以使用更高级的属性，如“闭合(**closed**)”和“半透明(**translucent**)”，外观将转换为渲染状态。例如：
 ```javascript
@@ -341,16 +339,16 @@ var anotherAppearance  = new Cesium.PerInstanceColorAppearance({
 - *flat*：平面阴影。不要考虑照明。
 - *faceForward*：照明时，翻转法线，使其始终面向观众。回避背面的黑色区域，例如墙的内侧。
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-f25071182b08b1f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf380bc8f41614150.png)
 
 ## Geometry and appearance compatibility 几何图形和外观兼容
 并非所有外观都适用于所有几何图形。例如，*EllipsoidSurfaceAppearance*外观不适用于*WallGeometry*几何图形，因为墙不在球体的表面上。
 
 要使外观与几何图形兼容，它们必须具有匹配的顶点格式，这意味着几何图形必须具有外观所期待的输入数据。创建几何图形时可以提供**vertexFormat**。
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-77f5aea18b1b961b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf380ec945ec99594.png)
 
-![image](https://upload-images.jianshu.io/upload_images/13720662-e8b8b6f36d7619bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/02/5cf38103779c545615.png)
 
 几何图形的**vertexFormat**确定它是否可以与其他几何图形组合。两个几何图形不必是相同的类型，但它们需要匹配的顶点格式。
 
@@ -382,9 +380,6 @@ var geometry3 = new Ceisum.RectangleGeometry({
 
 更多材料请访问：[Fabric](https://github.com/AnalyticalGraphicsInc/cesium/wiki/Fabric)
 更多未来计划，请访问：[Geometry and Appearances Roadmap](https://github.com/AnalyticalGraphicsInc/cesium/issues/766)
- 
-> 本文由 [admin](http://www.getyii.com/member/admin) 创作，采用 [知识共享署名 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by/3.0/cn) 进行许可。
-可自由转载、引用，但需署名作者且注明文章出处。
 
 **Cesium中文网交流QQ群：807482793**
 
