@@ -1,11 +1,12 @@
+# Cesium中级教程9 - Advanced Particle System Effects 高级粒子系统效应
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 要了解粒子系统的基础知识，请参见[粒子系统入门](https://cesium.com/docs/tutorials/particle-systems/)教程。
 
 ## Weather 天气
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-cbae9657edec6aec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7d9cfec1e357005.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-e79582f905fd5282.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7d9e7cd09c14561.png)
 
 ### Setup 设置
 
@@ -14,7 +15,7 @@ Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coin
 #### The images 图像
 本教程中使用了以下三个图像。左边是雨粒子；中间的图像是雪粒子；右边的图像用于火效果。
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-ebb5c5084f3916ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7d9fc2793292257.png)
 
 #### The update function 更新函数
 更新函数用于定义粒子的移动、排列和可视化。修改粒子的*color*颜色、*imageSize*图像大小和*particleLife*粒子生命周期。我们甚至可以基于到相机距离定义粒子（如下所述）、导入模型或到地球本身的距离来修改它们。
@@ -40,7 +41,7 @@ var snowUpdate = function(particle, dt) {
 ```
 函数的第一部分使粒子像重力一样下落。更新函数还包含一个距离检查，以便粒子在远离相机时消失。
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-b67d44ec052501c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7da0bf216660231.png)
 
 
 #### 额外的天气效应
@@ -62,7 +63,7 @@ scene.fog.minimumBrightness = 0.8;
 
 ### The systems 系统
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-f8feb31dcc807a3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7da2599e9546165.png)
 
 #### Snow 雪
 雪花系统使用*snowflake_particle*图像，并使用*minimumImageSize*和*maximumImageSize*，在该范围内随机创建雪花。
@@ -131,14 +132,14 @@ scene.fog.minimumBrightness = 0.01;
 
 ## Comet and rocket tails 彗星和火箭尾部
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-72e46ce84c55a7af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7da4452eef38032.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-53455b2ed9e510b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7da5a6ff0a19811.png)
 
 ### Using multiple particle systems 使用多重粒子系统
 要创建彗星和火箭尾部，我们需要多个粒子系统。该示例创建的粒子环上的每个位置都是完全独立的粒子系统。这使我们能够更均匀地控制系统的运动方向。可视化此效果的一个简单方法是将*cometOptions.numberOfSystems*限制为2，且*cometOptions.colorOptions*仅包括两种颜色，如下图所示。
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-32e738e2fcd3f826.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7da8d6ab6d14547.png)
 
 为了简化不同的系统集合，创建数组来携带与彗星相关联的独立系统和与火箭例子相关联的独立系统。
 ```javascript
@@ -294,7 +295,7 @@ var forceFunction = function(options, iteration) {
 
 ### Relative position 相对位置
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-9dbcfbc4bc95d3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7dab813ba867612.png)
 
 使用*modelMatrix*将粒子系统定位在平面后面的适当位置。因为这些系统是垂直的，所以我们需要使用*particleOffset*值进行轻微的偏移。如*createParticleSystems*函数所示，根据迭代，计算每个系统的*emitterModelMatrix*偏移量。
 ```javascript
@@ -315,9 +316,6 @@ var particlesModelMatrix = Cesium.Matrix4.multiplyTransformation(translPosition,
 - [Particle System Fireworks Demo](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Particle%20System%20Fireworks.html&label=Showcases)
 - [Particle System Weather Demo](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Particle%20System%20Weather.html&label=Showcases)
 - [Particle System Tails Demo](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Particle%20System%20Tails.html&label=Showcases)
-
-> 本文由 [admin](http://www.getyii.com/member/admin) 创作，采用 [知识共享署名 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by/3.0/cn) 进行许可。
-可自由转载、引用，但需署名作者且注明文章出处。
 
 **Cesium中文网交流QQ群：807482793**
 

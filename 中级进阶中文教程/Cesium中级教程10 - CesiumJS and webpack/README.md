@@ -1,3 +1,4 @@
+# Cesium中级教程10 - CesiumJS and webpack
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
 
 webpack是打包JavaScript模块流行且强大的工具。它允许开发人员以直观的方式构造代码和assets，并使用简单的*require*语句根据需要加载不同类型的文件。构建时，它将跟踪代码依赖关系，并将这些模块打包到浏览器加载的一个或多个包中。
@@ -199,9 +200,10 @@ npm install --save-dev webpack-dev-server
 ```javascript
 npm start
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-daff162bbc628867.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-3278b7fca2daee5d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7deb987a4d30895.png)
+
+![](https://i.loli.net/2019/06/05/5cf7dc038de0b80391.png)
 
 
 你应该看到你的内容在**localhost:8080**上呈现，看到“Hello World！“打开浏览器控制台时，显示消息。
@@ -368,11 +370,12 @@ require('cesium/Widgets/widgets.css');
 ```javascript
 var viewer = new Cesium.Viewer('cesiumContainer');
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-7211cb80ba63e08d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](https://i.loli.net/2019/06/05/5cf7dc381acce70140.png)
 
 使用*npm start*运行应用用于在浏览器中查看Viewer。
 
-![image.png](https://upload-images.jianshu.io/upload_images/13720662-de0a1555d7cdce1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://i.loli.net/2019/06/05/5cf7dc5148a5786386.png)
 
 复制并粘贴你最喜欢的[Sandcastle](https://cesium.com/docs/tutorials/cesium-and-webpack/)例子。例如，[粒子系统实例](https://cesium.com/docs/tutorials/cesium-and-webpack/?src=Particle%20System%20Fireworks.html&label=Showcases)可以得出一个很好的结论。
 

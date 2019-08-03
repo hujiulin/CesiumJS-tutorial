@@ -14,7 +14,7 @@ Cesium官方提供了一些地形数据集的例子，以及如何配置这些�
 - Heightmap
 - Google Earth Enterprise
 
-为了添加地形数据，我们需要创建一个**CesiumTerrainProvider**，提供一个url和一些配置想，然后将这个provider赋值给**viewer.terrainProvider**。
+为了添加地形数据，我们需要创建一个**CesiumTerrainProvider**，提供一个url和一些配置项，然后将这个provider赋值给**viewer.terrainProvider**。
 
 此处，我们使用[Cesium WorldTerrian](https://cesium.com/blog/2018/03/01/introducing-cesium-world-terrain/)图层，该图层由Cesium ion提供，在“My Assets”中是默认提供的。我们可以用**createWorldTerrain**helper函数创建一个由Cesium ion提供服务的[Cesium WorldTerrian](https://cesium.com/blog/2018/03/01/introducing-cesium-world-terrain/)。
 ```javascript

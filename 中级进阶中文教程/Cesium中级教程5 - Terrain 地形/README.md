@@ -71,9 +71,6 @@ Cesium基于地形提供器支持请求地形的若干种方法。大多数地�
 ## 资源
 查看Sandcastle中的[地形示例](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Terrain.html)和[所有地形提供器的参考文档](https://cesiumjs.org/Cesium/Build/Documentation/?classFilter=TerrainProvider)。
 
-> 本文由 [admin](http://www.getyii.com/member/admin) 创作，采用 [知识共享署名 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by/3.0/cn) 进行许可。
-可自由转载、引用，但需署名作者且注明文章出处。
-
 **Cesium中文网交流QQ群：807482793**
 
 Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coinidea.com/
