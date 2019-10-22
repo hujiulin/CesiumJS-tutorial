@@ -34,7 +34,7 @@ Cesium中文网：http://cesiumcn.org/ | 国内快速访问：http://cesium.coin
 
 ## Cesium利其器
 ### 目录
-
+- <a href="https://github.com/hujiulin/CesiumJS-tutorial/tree/master/%E4%B8%AD%E7%BA%A7%E8%BF%9B%E9%98%B6%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/Cesium%E4%B8%AD%E7%BA%A7%E6%95%99%E7%A8%8B1%20-%20%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89" target="_blank">[一]Cesium利其器——Visual Studio Code</a>
 
 ## 付费教程
 ### 目录
