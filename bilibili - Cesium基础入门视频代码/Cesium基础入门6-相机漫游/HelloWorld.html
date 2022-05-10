@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8" />
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <title>Hello World!</title>
+  <script src="../Build/Cesium/Cesium.js"></script>
+  <script src="./js/camerafly.js"></script>
+  <style>
+    @import url(../Build/Cesium/Widgets/widgets.css);
+
+    html,
+    body,
+    #cesiumContainer {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="credit"></div>
+  <div id="cesiumContainer"></div>
+  <script>
+    // Cesium.Ion.defaultAccessToken = '<YOUR ACCESS TOKEN>'
+    var viewer = new Cesium.Viewer("cesiumContainer",
+      {
+        geocoder: true,             // 1.开启geo搜索框
+        homeButton: true,           // 2.Home button
+        sceneModePicker: true,      // 3.二三维切换按钮
+        baseLayerPicker: true,       // 4.Layer选择
+        navigationHelpButton: true, // 5.帮助按钮
+        animation: true,            // 6.动画按钮
+        //creditContainer: "credit",   // 7. Cesium logo
+        timeline: true,             // 8.底部时间线
+        fullscreenButton: true      // 9.全屏按钮
+      });
+
+    var glbUrl = "/Apps/SampleData/models/CesiumAir/Cesium_Air.glb";
+    // 加载glb飞机
+    createModel(glbUrl, 5000.0);
+    // 飞机
+    function createModel(url, height) {
+      viewer.entities.removeAll();
+      var position = Cesium.Cartesian3.fromDegrees(116.39, 39.93, 60);
+      var heading = Cesium.Math.toRadians(135);
+      var pitch = 0;
+      var roll = 0;
+      var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+      var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+      var entity = viewer.entities.add({
+        name: url,
+        position: position,
+        orientation: orientation,
+        model: {
+          uri: url,
+          minimumPixelSize: 128,
+          maximumScale: 20000
+        }
+      });
+      viewer.trackedEntity = entity;
+    }
+
+    viewer.homeButton.viewModel.command.beforeExecute.addEventListener(function (e) {
+      e.cancel = true;
+      slideFly();
+    });
+  </script>
+</body>
+
+</html>
